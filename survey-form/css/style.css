@@ -1,0 +1,72 @@
+html,body{
+  background-color:#ddff99;
+  text-align:center;
+  min-width:320px;
+  padding-bottom:20px;
+}
+h1{
+  font-size:2em;
+  font-weight:bold;
+  margin:15px;
+}
+section{
+  background-color:white;
+  margin: 0 auto;
+  max-width:60%;
+  border-radius:5px;
+  padding:15px;
+}
+#survey-form{
+}
+.questions{
+  display:inline-block;
+  text-align:right;
+  width:40%;
+  vertical-align:top;
+  margin-top:10px;
+  
+}
+.rightColumn{
+  display:inline-block;
+  text-align:left;
+  width:45%;
+  vertical-align:middle;
+}
+.input{
+  height:20px;
+  width:220px;
+  border:1px solid  #c2c2a3;
+  border-radius:3px;
+  padding:5px;
+  margin:10px
+}
+.dropdown{
+  height:30px;
+  width:120px;
+  padding:5px;
+  margin:10px;
+}
+
+.radio-button, .checkbox{
+  position:relative;
+  display:block;
+  left:-35px;
+  margin-left:5px;
+  padding-bottom:10px;
+}
+
+.submit{
+  height:40px;
+  width:80px;
+  border:0px;
+  font-size:1em;
+  margin-top:15px;
+  background-color:#669900;
+  color:white;
+}
+
+@media(max-width:833px){
+  .input{
+    width:90%
+  }
+}
