@@ -1,0 +1,93 @@
+ 
+nav{
+   position:fixed;
+  top:5px;
+  right:65px;  
+}
+nav button{
+  padding:8px;
+  background-color:#e6ffe6;
+  font-size:13px;
+}
+button{
+  padding:8px;
+  background-color:#e6ffe6;
+  font-size:13px;
+  margin-bottom:10px;
+}
+.small-container {
+  display:flex;
+  flex-direction:column;
+   
+}
+h4{
+  margin-top:5px
+}
+.tag-names{
+  margin-bottom:30px;
+}
+aside{
+  border:2px solid green;
+  display:flex;
+  flex-direction:column; 
+  margin:5px;
+  padding-right:40px;
+  padding-left:40px;
+  padding-top: 20px;
+  position:absolute;
+  right:10px;
+}
+form h3{
+  margin-bottom:0px;
+}
+
+#tags-list div{
+  margin:5px;
+}
+#button{
+  margin-top:15px;
+  margin-bottom:15px
+   
+}
+form input{
+  margin-bottom:40px;
+}
+.container{
+   display:flex;
+  
+}
+section{
+  margin-right:350px;
+  margin-left:20px;
+}
+
+.cross-button {
+cursor: pointer;
+color: white;
+border: 1px solid #AEAEAE;
+border-radius: 30px;
+background: red;
+font-size: 25px;
+font-weight: bold;
+display: inline-block;
+line-height: 0px;
+padding: 11px 3px;
+position:relative;   
+ 
+top:10px;
+  left:300px
+
+}
+.cross-button:before{
+ content: "×";
+}
+@media screen and (max-width:700px){
+  aside{
+    display:none;
+  }
+  h1{
+    text-align:left;
+    margin-left:20px;
+    margin-top:60px;
+  }
+}
