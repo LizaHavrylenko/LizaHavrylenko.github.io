@@ -92,6 +92,10 @@ function configurations(){
             
             complete(clickedArray[0]);
             complete(clickedArray[1]);
+            clickedArray = []; 
+            setTimeout(() =>{
+                ready = true;
+                }, 1000);
             if(numCompleted == 12){
                 setTimeout(() =>{
                 alert(`You won in ${time} seconds!`);
@@ -111,7 +115,7 @@ function configurations(){
                 
                 setTimeout(() =>{
                 ready = true;
-                }, 2000);
+                }, 1000);
                 
             },1000);
 
@@ -141,7 +145,7 @@ function reveal(cell){
 };
 function hide(cell){
     cell.style.transform = "rotateY(0deg)";
-    cell.style.transition = "transform 2s";  
+    cell.style.transition = "transform 1s";  
     cell.clicked = false;
 };
 function complete(cell){
