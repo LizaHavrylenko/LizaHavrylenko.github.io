@@ -1,7 +1,8 @@
-let clickedArray = [];
+ let clickedArray = [];
 let interval;
 let started = false;
 let time = 0;
+let ready = true;
 let numCompleted = 0;
 const answersArray = [];
 
@@ -75,23 +76,22 @@ function configurations(){
     };
     });
     cell.addEventListener("click", function(event){
+        if(ready == false)
+        return;
          
         startTimer();
         if(event.currentTarget.completed == false && event.currentTarget.clicked == false){
-           
-        clickedArray.push(event.currentTarget);self
+        clickedArray.push(event.currentTarget);
         cell.style.background = "white";
         reveal(event.currentTarget);
     };
    
     if(clickedArray.length == 2){
-       
+        ready = false;
         if(clickedArray[0].children[1].children[0].name == clickedArray[1].children[1].children[0].name){
             
             complete(clickedArray[0]);
             complete(clickedArray[1]);
-        
-            clickedArray = [];
             if(numCompleted == 12){
                 setTimeout(() =>{
                 alert(`You won in ${time} seconds!`);
@@ -100,18 +100,25 @@ function configurations(){
             } 
         }
         else{
-            ready = false;
+             
             setTimeout(() =>{
                 clickedArray[0].classList.remove("flip");
                 clickedArray[1].classList.remove("flip");  
                 hide(clickedArray[0]);
                 hide(clickedArray[1]);
-                clickedArray = [];
+
+                clickedArray = []; 
+                
+                setTimeout(() =>{
                 ready = true;
+                }, 2000);
+                
             },1000);
 
         }
+        
     };
+        
     });
 }
 document.getElementById('restart').addEventListener('click', function(){
@@ -136,7 +143,6 @@ function hide(cell){
     cell.style.transform = "rotateY(0deg)";
     cell.style.transition = "transform 2s";  
     cell.clicked = false;
-    console.log(cell.clicked);
 };
 function complete(cell){
     numCompleted++;
@@ -145,3 +151,4 @@ function complete(cell){
     }, 1000);
     cell.completed = true;
 };
+
