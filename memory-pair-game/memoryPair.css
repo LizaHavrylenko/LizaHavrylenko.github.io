@@ -1,0 +1,46 @@
+.grid-container{
+    display:flex;
+    flex-wrap:wrap;
+    width:608px;
+    height:456px;
+    margin:0 auto;
+    border:2px solid black;
+}
+ 
+div.card{
+    perspective:1000px;
+    position:relative; 
+    border:1px solid black;
+    width: 150px;
+    height:150px;
+    transform-style:preserve-3d;
+}
+.front, .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+ 
+.back{
+    transform: rotateY(-180deg);
+    text-align:center;
+}
+img{
+    padding-top:20px;
+    width:70%;
+    height:70%;
+}
+.flip{
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+}
+ 
+ 
+button, p{
+    margin-top:20px;
+} 
+p{
+    padding:10px;
+}
+ 
