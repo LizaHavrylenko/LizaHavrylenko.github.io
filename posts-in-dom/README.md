@@ -1,4 +1,6 @@
- ### A page with the lists of posts where you can:
+### Posts-in-DOM 
+
+A page with the lists of posts where you can:
  
   - see posts that load automatically on scroll;
   - limit view of the page back to 10 posts; 
