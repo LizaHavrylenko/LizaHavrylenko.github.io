@@ -1,42 +1,38 @@
   // DOM element where the Timeline will be attached
   
-var container = document.getElementById('mytimeline');
+  const container = document.getElementById('mytimeline');
   // Create a DataSet (allows two way data-binding)
-  var numberOfItems = 0;
-  var items = new vis.DataSet();
-  var types = ['range']
+  const numberOfItems = 0;
+  const items = new vis.DataSet();
+  const types = ['range'];
   
-  for (var order = 1; order < numberOfItems; order++ ){
-    var date = vis.moment();
-	
-	
-	date.add(Math.round(Math.random() * 2), 'hour');
-	items.add({
+  for (let order = 1; order < numberOfItems; order++ ){
+    let date = vis.moment();
+
+	  date.add(Math.round(Math.random() * 2), 'hour');
+	  items.add({
 	  id: order,
 	  type: types[Math.floor(3*Math.random())],
 	  content: 'Shift ' + order,
 	  start: date.clone().add(order + 1, 'hour'),
 	  end: date.clone().add(order +3, 'hour')
 	  });
-	  }
+	  };
 
   // Configuration for the Timeline
-  var options = {
+  const options = {
    height:350,
    showTooltips:true,
    itemsAlwaysDraggable: true,
-     selectable:true,
+   selectable:true,
 	 stack:true,
 	 timeAxis:{
 	 scale:'hour', step: 1},
-	  
-  autoResize:true,
-  multiselect:true,
-  maxHeight: 400,
-  
-  
-  format:{
-  minorLabels: {
+	 autoResize:true,
+   multiselect:true,
+   maxHeight: 400,
+   format:{
+    minorLabels: {
     millisecond:'',
     second:     '',
     minute:     'HH:mm',
@@ -63,12 +59,9 @@ start: new Date ((new Date()).valueOf() - 10000000),
 end: new Date (1000*60*60*24 + (new Date()). valueOf()),
 min: new Date("2018-07-09T00:00:00+03:00"),
 max: new Date("2018-07-16T00:00:00+03:00"),
-    
+editable:true,
   
-  editable:true,
-  
-  
-    onAdd: function (item, callback) {
+  onAdd: function (item, callback) {
    item.content = prompt('Enter name for a new shift', item.content);
    item.start = prompt('Enter start time for a  shift',  item.start);
    if (item.end != null){
@@ -98,9 +91,7 @@ max: new Date("2018-07-16T00:00:00+03:00"),
     }
   },
     
-    
-    onRemove: function(item, callback){
-      console.log("onRemove is loaded");
+  onRemove: function(item, callback){
       result = confirm("Do you want to remove this shift?");
       if(result){
         callback(item);
@@ -110,21 +101,16 @@ max: new Date("2018-07-16T00:00:00+03:00"),
     }
     }
   };
-  
    
-  
- 
-
-   
-  var options1 = jQuery.extend(options, {
+  const options1 = jQuery.extend(options, {
   tooltipOnItemUpdateTime: true
-  })
+  });
   // Create a Timeline
    
-  var timeline = new vis.Timeline(container, items, null, options);
-document.getElementById('window1').onclick = function() {
+  const timeline = new vis.Timeline(container, items, null, options);
+    document.getElementById('window1').onclick = function() {
     timeline.setWindow('2018-07-09', '2018-07-16');
-  };
-document.getElementById('fit').onclick = function() {
+    };
+    document.getElementById('fit').onclick = function() {
     timeline.fit()
-}
+    };
