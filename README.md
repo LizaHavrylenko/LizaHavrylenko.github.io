@@ -1,2 +1,2 @@
 # LizaHavrylenko.github.io
-A site with the links to my projects
+Welcome to my github pages. Take a look at my projects [here](https://lizahavrylenko.github.io)
