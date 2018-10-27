@@ -16,33 +16,30 @@ header{
 }
  
 h1{
-  margin:10px;
+  margin:20px;
 }
       .personal-info  {
         border:2px solid black;
-        margin:10px;
+        margin-top:11px;
+        height: 105px;
+        padding:5px;
         padding-left:0px;
       }
-i{
-  padding:5px;
-}
+ 
 .user-photo{
-   margin-top:5px;
+   margin-top:10px;
   margin-left: 10px;
   margin-right:10px
 }
-   
-      .container{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-         
-      }
-      article{
-        border:2px solid black;
-        padding:20px;
-        background-color:grey;
-      }
+ .container{
+   display:flex;
+   flex-wrap:wrap;
+  justify-content:space-around;
+}
+img{
+  height: 119px;
+}
+     
 .buttons{
   margin-left:10px;
 }
@@ -74,8 +71,7 @@ article {
   height: 110px;
   margin-top: 30px;
   margin-bottom: 10px;
-   
-   border:2px solid black;
+  border:2px solid black;
   color: black;
   font-size:15px;
      
