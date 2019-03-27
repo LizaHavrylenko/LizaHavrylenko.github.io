@@ -18,6 +18,7 @@ h2, p{
   background-image: url('./images/lake.jpg');
   background-size: cover;
   height: 100vh;
+  -webkit-animation: movePhoto 8s ease-out both;
   animation: movePhoto 8s ease-out both;
 }
 
