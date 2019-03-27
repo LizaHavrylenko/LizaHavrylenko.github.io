@@ -16,6 +16,8 @@ h2, p{
 
 .container {
   background-image: url('./images/lake.jpg');
+  background-size: cover;
+  height: 100vh;
 }
  
   
