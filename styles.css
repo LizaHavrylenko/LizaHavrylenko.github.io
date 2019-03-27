@@ -19,6 +19,23 @@ h2, p{
   background-size: cover;
   height: 100vh;
 }
+
+.works {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  transition: text-decoration .3s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
  
   
 @media only screen and (max-width: 500px) {
