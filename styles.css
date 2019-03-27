@@ -18,6 +18,7 @@ h2, p{
   background-image: url('./images/lake.jpg');
   background-size: cover;
   height: 100vh;
+  animation: movePhoto 8s ease-out both;
 }
 
 .works {
@@ -42,5 +43,36 @@ h2, p{
     .project {
       margin: 40px 0;
     }
+}
+
+ 
+  @-webkit-keyframes movePhoto {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 16%;
+              transform-origin: 16% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, -15px);
+              transform: scale(1.25) translate(-20px, -15px);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
   }
+  @keyframes movePhoto {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 16%;
+              transform-origin: 16% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, -15px);
+              transform: scale(1.25) translate(-20px, -15px);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
+  }
+
    
