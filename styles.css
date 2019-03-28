@@ -20,20 +20,42 @@ html,body {
   margin: 0 auto;
   width: 60%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .link:link,
 .link:visited {
     text-decoration: none;
     display: block;
-    transition: text-decoration .3s;
+     
     margin: 10px 50px 50px;
 }
 
 .link:hover {
   text-decoration: underline;
 }
+
+.link:link,
+.link:visited {
+      background-color: rgba(247, 249, 246, 0.5);
+      color: #333333;
+      display: inline-block;
+      text-decoration: none;
+      margin: 10px 50px 50px;
+      border-bottom: 1px solid #333333;
+      padding: 3px;
+      transition: all .3s;
+  }
+
+  .link:hover {
+      background-color: rgba(247, 249, 246);
+      box-shadow: 0 1rem 2rem rgba(black, .15);
+      transform: translateY(-2px);
+  }
+
+  .link:active {
+      box-shadow: 0 .5rem 1rem rgba(black, .15);
+      transform: translateY(0);
+  }
 
 span {
   display: inline-block;
