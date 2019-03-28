@@ -10,6 +10,14 @@ html,body {
     box-sizing: border-box;
 }
 
+h2 {
+  margin: 50px auto 25px;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
 .container {
   background-image: url('./images/lake.jpg');
   background-size: cover;
@@ -26,46 +34,34 @@ html,body {
 .left-side {
   width: 50%;
 }
-
+ 
 .link:link,
 .link:visited {
-    text-decoration: none;
-    display: block;
-     
-    margin: 10px 50px 50px;
+  background-color: rgba(247, 249, 246, 0.5);
+  color: #333333;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 50px 50px;
+  padding: 3px;
+  transition: all .3s;
 }
 
 .link:hover {
-  text-decoration: underline;
+  background-color: rgba(247, 249, 246);
+  box-shadow: 0 1rem 2rem rgba(black, .15);
+  transform: translateY(-2px);
 }
 
-.link:link,
-.link:visited {
-      background-color: rgba(247, 249, 246, 0.5);
-      color: #333333;
-      display: inline-block;
-      text-decoration: none;
-      margin: 10px 50px 50px;
-      border-bottom: 1px solid #333333;
-      padding: 3px;
-      transition: all .3s;
-  }
-
-  .link:hover {
-      background-color: rgba(247, 249, 246);
-      box-shadow: 0 1rem 2rem rgba(black, .15);
-      transform: translateY(-2px);
-  }
-
-  .link:active {
-      box-shadow: 0 .5rem 1rem rgba(black, .15);
-      transform: translateY(0);
-  }
+.link:active {
+  box-shadow: 0 .5rem 1rem rgba(black, .15);
+  transform: translateY(0);
+}
 
 span {
   display: inline-block;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
  
  
