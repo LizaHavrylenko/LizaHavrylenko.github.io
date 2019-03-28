@@ -5,13 +5,13 @@ html,body {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2 {
-  margin: 50px auto 25px;
+  padding: 50px auto 25px;
 }
 
 p {
@@ -41,7 +41,7 @@ p {
   color: #333333;
   display: inline-block;
   text-decoration: none;
-  margin: 10px 50px 50px;
+  margin: 20px 50px 20px;
   padding: 3px;
   transition: all .3s;
 }
