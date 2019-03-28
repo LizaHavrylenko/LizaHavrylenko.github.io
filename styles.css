@@ -22,6 +22,11 @@ html,body {
   display: flex;
 }
 
+.right-side,
+.left-side {
+  width: 50%;
+}
+
 .link:link,
 .link:visited {
     text-decoration: none;
