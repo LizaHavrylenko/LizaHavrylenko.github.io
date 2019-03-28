@@ -14,8 +14,6 @@ html,body {
   background-image: url('./images/lake.jpg');
   background-size: cover;
   height: 100vh;
-  -webkit-animation: movePhoto 8s ease-out both;
-  animation: movePhoto 8s ease-out both;
 }
 
 .works {
@@ -25,15 +23,22 @@ html,body {
   flex-wrap: wrap;
 }
 
-.link {
-  text-decoration: none;
-  display: block;
-  transition: text-decoration .3s;
-  margin: 10px;
+.link:link,
+.link:visited {
+    text-decoration: none;
+    display: block;
+    transition: text-decoration .3s;
+    margin: 10px 50px 50px;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+span {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
  
   
@@ -44,39 +49,5 @@ html,body {
 }
 
  
-  @-webkit-keyframes movePhoto {
-    0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 16%;
-              transform-origin: 16% 16%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translate(-20px, -15px);
-              transform: scale(1.25) translate(-20px, -15px);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-    }
-  }
-  @keyframes movePhoto {
-    0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 16%;
-              transform-origin: 16% 16%;
-    }
-    50% {
-      -webkit-transform: scale(1.25) translate(-20px, -15px);
-              transform: scale(1.25) translate(-20px, -15px);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-    }
-    100% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 16%;
-              transform-origin: 16% 16%;
-    }
-  }
-
+  
    
