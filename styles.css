@@ -2,7 +2,7 @@
   font-family: 'Aleo';
   src: url('font/aleo-regular-webfont.eot');  
   src: url('font/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),  
-       url('webfont.woff2') format('woff2'),
+       url('font/aleo-regular-webfont.woff2') format('woff2'),
        url('font/aleo-regular-webfont.woff') format('woff'), 
        url('font/aleo-regular-webfont.ttf')  format('truetype'),  
        url('font/aleo-regular-webfont.svg#svgFontName') format('svg');  
@@ -23,7 +23,7 @@ html,body {
 }
 
 h2 {
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 25px;
 }
 
@@ -35,7 +35,7 @@ p {
 
 .container {
   background: #0f2027;   
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right bottom,
     rgba(#0f2027, 0.6),
     rgba(#203a43, 0.6),
