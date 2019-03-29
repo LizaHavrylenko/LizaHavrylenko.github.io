@@ -3,60 +3,86 @@
         <title>Github pages</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+        <script src="index.js" defer></script>
         <link rel="stylesheet" href="styles.css">
     </head> 
     <body>
         <section class="container">
+            <nav class="navbar__nav" id="navigation">
+              <img src="images/cross.svg" alt="Close sign" id="close-nav">
+              <ul class="navbar__list">
+                <li class="navbar__item"><a href="" class="navbar__link">lizagavrilenkooo@gmail.com</a></li>
+                <li class="navbar__item"><a href="" class="navbar__link">+380961038476</a></li>
+                <li class="navbar__item"><a href="cv/CV(Havrylenko).pdf" class="navbar__link">CV</a></li>
+                <li class="navbar__item"><a href="https://github.com/LizaHavrylenko" class="navbar__link">Github</a></li>
+              </ul>
+            </nav>
+            <svg class="plane" id="plane-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="573" y1="64" x2="29" y2="289.6"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="186.7" y1="346" x2="29" y2="289.6"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="186.7" y1="346" x2="573" y2="64"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="451.9" y1="488.5" x2="572.6" y2="63.4"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="570.8" y1="64.6" x2="228.1" y2="365.7"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="452.3" y1="489.1" x2="229.1" y2="364.2"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="186.7" y1="346" x2="226.7" y2="482.5"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="229.1" y1="364.2" x2="226.7" y2="482.5"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="295.4" y1="401.3" x2="226.7" y2="482.5"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="342" y1="265.5" x2="452.3" y2="489.1"></line>
+							<line fill="none" stroke="#f7f9f6" stroke-width="10" stroke-miterlimit="10" x1="313.1" y1="253.8" x2="29" y2="289.6"></line>
+						</svg>
             <h2>Welcome to my page!</h2>
             <p>My name is Liza Havrylenko. I am front-end developer currently based in Kyiv, Ukraine.
               During the last year I have been doing markup development, responsive design, and participated 
-              in the full cycle of React application development having completed it's front-end part. I like 
-              create animations and experiment with technologies. Take a look at me pet-projects here.
+              in the full cycle of React application development having completed its front-end part. I like 
+              creating animations and experimenting with technologies. Take a look at my 
+              <a href="cv/CV(Havrylenko).pdf" class="cv__link"><b>CV</b></a> and pet-projects here.
             </p>
             <div class = "works">
               <div class="left-side">
                 <a  href = "https://lizahavrylenko.github.io/SVG-whale-animation/" target="_blank" class="link">
                   Animated SVG Whale 
-                  <span>( Inkscape SVG illustration, GSAP & SMIL animations )</span>
+                  <span >(NodeJS, Ajax, Bootstrap, Sass (SCSS))</span>
+                  <span class="technologies">(Inkscape SVG illustration, GSAP & SMIL animations)</span>
                 </a>
                 <a  href = "https://travel-agency-landing.herokuapp.com" target="_blank" class="link">
                   Travel agency landing page
-                  <span>( CSS3 animations, Webpack, Sass (SCSS) )</span>
+                  <span class="technologies">(CSS3 animations, Webpack, Sass (SCSS))</span>
                 </a>
                 <a  href = "https://chat-node-ajax.herokuapp.com" target="_blank" class="link">
                   Chat App
-                  <span>( NodeJS, Ajax, Bootstrap, Sass (SCSS))</span>
+                  <span class="technologies">(NodeJS, Ajax, Bootstrap, Sass (SCSS))</span>
                 </a>
                 <a  href = "https://lizahavrylenko.github.io/memory-pair-game/" target="_blank" class="link">
                   Memory-Pair Game
-                  <span>( Game with flipping cards )</span>
+                  <span class="technologies">(Game with flipping cards)</span>
                 </a>
                 <a  href = "https://lizahavrylenko.github.io/hotel-room/" target="_blank" class="link">
                   Hotel room page
-                  <span>( Markup )</span>
+                  <span class="technologies">(Markup)</span>
                 </a>
               </div>
               <div class="right-side">
                 <a  href = "https://task-manager-react.herokuapp.com" target="_blank" class="link">
                   Task Manager App 
-                  <span>( React, Create-React-App, SVG & CSS3 animations )</span>
+                  <span class="technologies">(React, Create-React-App, SVG & CSS3 animations, Sass (SCSS))</span>
                 </a>
                 <a  href = "https://react-redux-cookbook.herokuapp.com/recipes" target="_blank" class="link">
                   Cookbook App 
-                  <span>( React, Redux, Create-React-App, Bootstrap )</span>
+                  <span class="technologies">(React, Redux, Create-React-App, Bootstrap)</span>
                 </a>
                 
                 <a  href = "survey-form/index.html" target="_blank" class="link">
                   Survey Form
-                  <span>( Markup )</span>
+                  <span class="technologies">(Markup)</span>
                 </a>
                 <a  href = "posts-in-dom/index.html" target="_blank" class="link">
                   Sortable Posts
-                  <span>( Sort, search, remove posts functionality, infinite scroll )</span>
+                  <span class="technologies">(Sort, search, remove posts functionality, infinite scroll)</span>
                 </a>
                 <a  href = "landing-page/landing-page.html" target="_blank" class="link">
                   Shop Landing Page 
-                  <span>( Markup )</span>
+                  <span class="technologies">(Markup)</span>
                 </a>
               </div> 
             </div>
