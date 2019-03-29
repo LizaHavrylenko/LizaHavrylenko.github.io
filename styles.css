@@ -28,6 +28,8 @@ h2 {
 
 p {
   margin-bottom: 50px;
+  width: 60%;
+  text-align: left;
 }
 
 .container {
