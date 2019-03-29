@@ -1,7 +1,17 @@
 html,body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Aleo', sans-serif;
   text-align: center;
   text-decoration-color: #373F27;
+}
+
+@font-face {
+  font-family: 'Aleo', sans-serif;
+  src: url('font/aleo-regular-webfont.eot');  
+  src: url('font/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),  
+       url('webfont.woff2') format('woff2'),
+       url('font/aleo-regular-webfont.woff') format('woff'), 
+       url('font/aleo-regular-webfont.ttf')  format('truetype'),  
+       url('font/aleo-regular-webfont.svg#svgFontName') format('svg');  
 }
 
 * {
@@ -20,7 +30,15 @@ p {
 }
 
 .container {
-  background-image: url('./images/lake.jpg');
+  background: #0f2027;  
+  background-image: -webkit-linear-gradient(
+    to right bottom,
+    rgba(#0f2027, #203a43, #2c5364, 0.7)),
+    url('./images/lake.jpg');  
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#0f2027, #203a43, #2c5364, 0.7)),
+    url('./images/lake.jpg');
   background-size: cover;
   height: auto;
 }
