@@ -1,18 +1,18 @@
-html,body {
-  font-family: 'Aleo', sans-serif;
-  color: rgba(247, 249, 246);
-  text-align: center;
-  text-decoration-color: #373F27;
-}
-
 @font-face {
-  font-family: 'Aleo', sans-serif;
+  font-family: 'Aleo';
   src: url('font/aleo-regular-webfont.eot');  
   src: url('font/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),  
        url('webfont.woff2') format('woff2'),
        url('font/aleo-regular-webfont.woff') format('woff'), 
        url('font/aleo-regular-webfont.ttf')  format('truetype'),  
        url('font/aleo-regular-webfont.svg#svgFontName') format('svg');  
+}
+
+html,body {
+  font-family: 'Aleo', sans-serif;
+  color: rgb(247, 249, 246);
+  text-align: center;
+  text-decoration-color: rgb(247, 249, 246);
 }
 
 * {
@@ -55,8 +55,6 @@ p {
  
 .link:link,
 .link:visited {
-  background-color: rgba(247, 249, 246, 0.5);
-  color: #333333;
   display: inline-block;
   text-decoration: none;
   margin: 20px 50px 20px;
@@ -65,16 +63,10 @@ p {
 }
 
 .link:hover {
-  background-color: rgba(247, 249, 246);
-  box-shadow: 0 1rem 2rem rgba(black, .15);
+  text-decoration: underline;
   transform: translateY(-2px);
 }
-
-.link:active {
-  box-shadow: 0 .5rem 1rem rgba(black, .15);
-  transform: translateY(0);
-}
-
+ 
 span {
   display: inline-block;
   width: 100%;
