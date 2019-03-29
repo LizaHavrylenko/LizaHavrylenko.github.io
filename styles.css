@@ -11,7 +11,8 @@ html,body {
 }
 
 h2 {
-  padding: 50px auto 25px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 p {
@@ -21,12 +22,12 @@ p {
 .container {
   background-image: url('./images/lake.jpg');
   background-size: cover;
-  height: 100vh;
+  height: auto;
 }
 
 .works {
   margin: 0 auto;
-  width: 80%;
+  width: 95%;
   display: flex;
 }
 
