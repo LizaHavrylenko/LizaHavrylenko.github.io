@@ -31,14 +31,12 @@ p {
 }
 
 .container {
-  background: #0f2027;  
-  background-image: -webkit-linear-gradient(
-    to right bottom,
-    rgba(#0f2027, #203a43, #2c5364, 0.7)),
-    url('./images/lake.jpg');  
+  background: #0f2027;   
   background-image: linear-gradient(
     to right bottom,
-    rgba(#0f2027, #203a43, #2c5364, 0.7)),
+    rgba(#0f2027, 0.6),
+    rgba(#203a43, 0.6),
+    rgba(#2c5364, 0.6)),
     url('./images/lake.jpg');
   background-size: cover;
   height: auto;
