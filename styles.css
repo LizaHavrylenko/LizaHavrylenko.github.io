@@ -36,8 +36,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(
-    to right bottom,
+  background-image: linear-gradient(
+    45deg,
     rgba(#0f2027, 0.6),
     rgba(#203a43, 0.6),
     rgba(#2c5364, 0.6)),
