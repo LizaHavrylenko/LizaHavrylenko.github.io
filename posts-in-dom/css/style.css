@@ -1,32 +1,41 @@
+body {
+  position: relative;
+}
+
+nav {
+  position:fixed;
+  top: 25px;
+  right: 70px;  
+}
  
-nav{
-   position:fixed;
-  top:5px;
-  right:65px;  
+nav button {
+  padding: 8px;
+  background-color: #e6ffe6;
+  font-size: 13px;
 }
-nav button{
-  padding:8px;
-  background-color:#e6ffe6;
-  font-size:13px;
-}
-button{
+
+button {
   padding:8px;
   background-color:#e6ffe6;
   font-size:13px;
   margin-bottom:10px;
 }
+
 .small-container {
   display:flex;
   flex-direction:column;
-   
-}
-h4{
+} 
+
+h4 {
   margin-top:5px
 }
-.tag-names{
+
+.tag-names {
   margin-bottom:30px;
 }
-aside{
+
+aside {
+  z-index: -1;
   border:2px solid green;
   display:flex;
   flex-direction:column; 
@@ -37,55 +46,70 @@ aside{
   position:absolute;
   right:10px;
 }
-form h3{
+
+form h3 {
   margin-bottom:0px;
 }
 
-#tags-list div{
-  margin:5px;
+#tags-list div {
+  margin: 10px;
+  padding-bottom: 10px;
 }
-#button{
+
+#button {
   margin-top:15px;
-  margin-bottom:15px
-   
-}
-form input{
+  margin-bottom:15px   
+}  
+
+form input {
   margin-bottom:40px;
+  height: 29px;
+} 
+
+input,
+button {
+  border-radius: 3px;
 }
-.container{
-   display:flex;
-  
-}
-section{
+
+.container {
+  display:flex;
+} 
+
+section {
   margin-right:350px;
   margin-left:20px;
 }
 
 .cross-button {
-cursor: pointer;
-color: white;
-border: 1px solid #AEAEAE;
-border-radius: 30px;
-background: red;
-font-size: 25px;
-font-weight: bold;
-display: inline-block;
-line-height: 0px;
-padding: 11px 3px;
-position:relative;   
- 
-top:10px;
-  left:300px
+  cursor: pointer;
+  color: white;
+  border: 1px solid #AEAEAE;
+  border-radius: 30px;
+  background: red;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 4px;
+  position:relative;   
+  top: 10px;
+  left: 300px
+}
 
-}
 .cross-button:before{
- content: "×";
+  content: "×";
 }
-@media screen and (max-width:700px){
-  aside{
+
+#buttonBackTo10 {
+  z-index: 10;
+}
+
+@media screen and (max-width:700px) {
+  aside {
     display:none;
   }
-  h1{
+
+  h1 {
     text-align:left;
     margin-left:20px;
     margin-top:60px;

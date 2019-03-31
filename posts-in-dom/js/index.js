@@ -96,7 +96,7 @@ let sortPosts = (fetchedData, sortBy) =>{
       return sortWithCopy(fetchedData, compareByTag);
     }
     else{
-      console.log('Local storage already has selected token fith garbage values.');
+      console.log('Local storage already has selected token with garbage values.');
     }
 }
 
