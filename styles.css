@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'Aleo';
-  src: url('font/aleo-regular-webfont.eot');  
-  src: url('font/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),  
-       url('font/aleo-regular-webfont.woff2') format('woff2'),
-       url('font/aleo-regular-webfont.woff') format('woff'), 
-       url('font/aleo-regular-webfont.ttf')  format('truetype'),  
-       url('font/aleo-regular-webfont.svg#svgFontName') format('svg');  
+  font-family: "Aleo";
+  src: url("font/aleo-regular-webfont.eot");
+  src: url("font/aleo-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("font/aleo-regular-webfont.woff2") format("woff2"),
+    url("font/aleo-regular-webfont.woff") format("woff"),
+    url("font/aleo-regular-webfont.ttf") format("truetype"),
+    url("font/aleo-regular-webfont.svg#svgFontName") format("svg");
 }
 
-html,body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Aleo', sans-serif;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Aleo", sans-serif;
   color: rgb(247, 249, 246);
   text-align: center;
   text-decoration-color: rgb(247, 249, 246);
@@ -51,7 +52,7 @@ p {
   width: 10%;
   height: 10%;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .plane:hover {
@@ -67,13 +68,13 @@ p {
   align-items: center;
   background: #0f2027;
   background-image: linear-gradient(
-    45deg,
-    rgba(15, 32, 39, 0.8),
-    rgba(32, 58, 67, 0.8),
-    rgba(44, 83, 100, 0.8)),
-    url('./images/lake.jpg');
+      45deg,
+      rgba(15, 32, 39, 0.8),
+      rgba(32, 58, 67, 0.8),
+      rgba(44, 83, 100, 0.8)
+    ),
+    url("./images/lake.jpg");
   background-size: cover;
-  height: auto;
 }
 
 .works {
@@ -86,7 +87,7 @@ p {
 .left-side {
   width: 50%;
 }
- 
+
 .link:link,
 .link:visited {
   position: relative;
@@ -94,7 +95,7 @@ p {
   text-decoration: none;
   margin: 17px 50px 17px;
   padding: 3px;
-  transition: all .3s;
+  transition: all 0.3s;
   color: rgb(247, 249, 246);
   font-weight: 600;
 }
@@ -103,7 +104,7 @@ p {
   position: absolute;
   top: 100%;
   left: 0;
-  content: '';
+  content: "";
   width: 0;
   height: 1px;
   background: rgb(247, 249, 246);
@@ -111,9 +112,9 @@ p {
 }
 
 .link:hover::after {
-   width: 100%;
+  width: 100%;
 }
- 
+
 .technologies {
   display: inline-block;
   width: 100%;
@@ -121,25 +122,24 @@ p {
   margin-top: 10px;
   font-weight: 400;
 }
- 
 
 .navbar__nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 25%;
-      height: 60vh;
-      background-color: rgba(247, 249, 246, .9);
-      opacity: 0;
-      z-index: 1500;
-      transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 60vh;
+  background-color: rgba(247, 249, 246, 0.9);
+  opacity: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navbar__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);  
+  transform: translate(-50%, -50%);
   list-style: none;
 }
 
@@ -166,7 +166,7 @@ p {
   position: absolute;
   top: 100%;
   left: 0;
-  content: '';
+  content: "";
   width: 0;
   height: 1px;
   background: #0f2027;
@@ -195,9 +195,3 @@ p {
     margin: 15px;
   }
 }
- 
- 
- 
- 
-  
-   
